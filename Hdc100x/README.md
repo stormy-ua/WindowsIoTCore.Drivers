@@ -10,6 +10,11 @@ Windows 10 IoT driver for [Adafruit HDC100X](https://learn.adafruit.com/adafruit
 - [Datasheet](http://www.adafruit.com/datasheets/hdc1008.pdf)
 - [Pinouts](https://learn.adafruit.com/adafruit-hdc1008-temperature-and-humidity-sensor-breakout/pinouts)
 
+### Sample Project
+
+The [sample](https://github.com/stormy-ua/WindowsIoTCore.Drivers/tree/master/Hdc100x/CS/Sample/Azure.EventHub) showing how the HDC100x driver can be used with Raspberri Pi 2 in order to continuosly post measurement data to [Azure EventHub](http://azure.microsoft.com/en-us/services/event-hubs/).
+The application itself is a UWP background task application. Data is being posted to EventHub using the [ConnectTheDots sample application](https://github.com/MSOpenTech/connectthedots/tree/master/Devices/DirectlyConnectedDevices/WindowsIoTCorePi2).
+
 #### Sample Code
 
 ```csharp
